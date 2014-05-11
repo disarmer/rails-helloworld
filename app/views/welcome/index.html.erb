@@ -1,0 +1,6 @@
+<h1>Hello, world!</h1>
+<img alt='logo' src='assets/rails.png'/>
+<div style='float:right'>
+postgresql version: <br/>
+<%= ActiveRecord::Base.connection.execute('select version();').getvalue(0,0) %>
+</div>
